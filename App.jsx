@@ -6,7 +6,7 @@ import React, { useState } from "react";
 import { Alert, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 import NfcManager, { NfcTech } from "react-native-nfc-manager";
-import { execHaloCmd, initNFCManagerHalo } from "@arx-research/libhalo";
+import { execHaloCmdRN } from "@icedevml/libhalo";
 
 NfcManager.start();
 
@@ -20,14 +20,13 @@ function App() {
       await NfcManager.requestTechnology(NfcTech.IsoDep);
       const tag = await NfcManager.getTag();
 
-      let options = await initNFCManagerHalo(NfcManager);
-      let res = await execHaloCmd({
+      let res = await execHaloCmdRN(NfcManager, {
         name: "sign",
         message: "0102",
         keyNo: 1,
         /* uncomment the line below if you get an error about setting "command.legacySignCommand = true" */
         // legacySignCommand: true
-      }, options);
+      });
 
       Alert.alert('HaLo', JSON.stringify(res, null, 4));
     } catch (ex) {

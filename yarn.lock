@@ -10,10 +10,10 @@
     "@jridgewell/gen-mapping" "^0.1.0"
     "@jridgewell/trace-mapping" "^0.3.9"
 
-"@arx-research/libhalo@^1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@arx-research/libhalo/-/libhalo-1.0.4.tgz#5c67ab4e8fe2e03b3b4cfe60a7fc19978df468b5"
-  integrity sha512-9IQEEYnivBQPHkT6dqYE+D/+cnfDT2ctW9W0/nAKrKyYJ1J6N8u9ZdrZu0FJDp5onYgdexGa4u2a8f5vDFURYw==
+"@arx-research/libhalo@^1.0.10":
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/@arx-research/libhalo/-/libhalo-1.0.10.tgz#3090c6c18bf59266f9b6440a36c4907a44cec3b1"
+  integrity sha512-lv0YmEAUvQWd5JI6x5VvykpeMJ0dGRvBgfw7Yb03o8NvN7B/iH8ebE0l86itglYpIi79OU+B/1YQm3f6vmtJkQ==
   dependencies:
     argparse "^2.0.1"
     buffer "^6.0.3"
