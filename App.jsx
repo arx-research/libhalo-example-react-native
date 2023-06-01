@@ -6,7 +6,7 @@ import React, { useState } from "react";
 import { Alert, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 import NfcManager, { NfcTech } from "react-native-nfc-manager";
-import { execHaloCmdRN } from "@icedevml/libhalo";
+import { execHaloCmdRN } from "@arx-research/libhalo/api/react-native.js";
 
 NfcManager.start();
 

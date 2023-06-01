@@ -10,7 +10,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@arx-research/libhalo": "^1.0.10",
+    "@arx-research/libhalo": "^1.2.0",
     "react": "18.2.0",
     "react-native": "0.71.3",
     "react-native-nfc-manager": "^3.14.2"
